@@ -1,4 +1,4 @@
-```javascript id="wz8n3m"
+```javascript
 const menuItems = document.querySelectorAll(".menu-item");
 
 menuItems.forEach(function(item) {
@@ -9,6 +9,10 @@ menuItems.forEach(function(item) {
 
         fetch("json/" + fileName)
             .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("JSON file not found");
+                }
+
                 return response.json();
             })
             .then(function(data) {
@@ -23,6 +27,7 @@ menuItems.forEach(function(item) {
                             <p>${food.description}</p>
                         </div>
                     `;
+
                 });
 
                 document.body.innerHTML = `
@@ -35,8 +40,7 @@ menuItems.forEach(function(item) {
             })
             .catch(function(error) {
 
-                console.log(error);
-
+                console.error(error);
                 alert("There is a problem loading the JSON file.");
 
             });
