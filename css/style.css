@@ -1,0 +1,137 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 30px 0;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    background-color: #a5a5a5;
+    border: 1px solid #000000;
+    padding: 55px 20px 20px;
+    flex: 1;
+
+    /* Change mouse pointer */
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    padding: 8px 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Chicken */
+.chicken-title {
+    background-color: #d5989b;
+    color: #000000;
+}
+
+/* Beef */
+.beef-title {
+    background-color: #c9302c;
+    color: #ffffff;
+}
+
+/* Sushi */
+.sushi-title {
+    background-color: #e5d08f;
+    color: #000000;
+}
+
+/* Text inside the boxes */
+.menu-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .menu-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .menu-item:last-child {
+        flex: 0 0 100%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    .menu-container {
+        display: block;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+```
+```css
+/* Food details page */
+
+.food-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.food-item {
+    background-color: #a5a5a5;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.food-item h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.food-item p {
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.6;
+}
+```

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Steak",
+        "description": "A delicious grilled steak cooked with simple spices."
+    },
+    {
+        "name": "Beef Burger",
+        "description": "A juicy beef burger served with fresh vegetables and sauce."
+    },
+    {
+        "name": "Beef Shawarma",
+        "description": "Tender beef slices cooked with spices and served with bread."
+    },
+    {
+        "name": "Beef Pasta",
+        "description": "A tasty pasta dish prepared with beef and creamy sauce."
+    },
+    {
+        "name": "Beef Kabab",
+        "description": "Seasoned beef pieces grilled on skewers until delicious."
+    }
+]

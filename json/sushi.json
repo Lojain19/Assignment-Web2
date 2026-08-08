@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Salmon Sushi",
+        "description": "Fresh salmon served with seasoned sushi rice."
+    },
+    {
+        "name": "Tuna Sushi",
+        "description": "Fresh tuna combined with sushi rice and seaweed."
+    },
+    {
+        "name": "California Roll",
+        "description": "A popular sushi roll made with crab, avocado, and cucumber."
+    },
+    {
+        "name": "Vegetable Roll",
+        "description": "A healthy sushi roll filled with fresh vegetables."
+    },
+    {
+        "name": "Shrimp Sushi",
+        "description": "Delicious shrimp served with sushi rice and seaweed."
+    }
+]
